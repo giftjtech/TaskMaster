@@ -1,4 +1,11 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
+import { config } from 'dotenv';
+import { resolve } from 'path';
+
+// Load .env file for migrations
+// Handle both source (ts) and compiled (js) locations
+const envPath = resolve(__dirname, '../../.env');
+config({ path: envPath });
 
 const isProduction = process.env.NODE_ENV === 'production';
 const passwordEnv = process.env.DATABASE_PASSWORD;

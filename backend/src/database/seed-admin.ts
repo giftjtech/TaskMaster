@@ -1,7 +1,12 @@
 import { DataSource } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { config } from 'dotenv';
+import { resolve } from 'path';
 import { User } from '../users/entities/user.entity';
 import { UserRole } from '../users/entities/user.entity';
+
+// Load .env file for seed scripts
+config({ path: resolve(__dirname, '../../.env') });
 
 async function seedAdmin() {
   const isProduction = process.env.NODE_ENV === 'production';
