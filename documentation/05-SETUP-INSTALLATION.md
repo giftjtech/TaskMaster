@@ -17,8 +17,8 @@ Before setting up the application, ensure you have the following installed:
 ### Step 1: Clone and Navigate
 
 ```bash
-git clone <repository-url>
-cd task-manage
+git clone https://github.com/giftjtech/TaskMaster.git
+cd TaskMaster
 ```
 
 ### Step 2: Backend Setup

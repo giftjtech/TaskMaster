@@ -148,7 +148,7 @@ TaskMaster is a professional, production-ready task management platform designed
 
 1. **Authentication Flow**:
    - User logs in → Backend validates credentials → JWT tokens issued
-   - Access token stored in memory, refresh token in httpOnly cookie
+   - Access token stored in memory, refresh token in http Only cookie
    - Subsequent requests include access token in Authorization header
 
 2. **Data Flow**:
