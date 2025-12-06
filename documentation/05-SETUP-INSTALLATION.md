@@ -101,6 +101,16 @@ Or for admin only:
 npm run seed:admin  # Creates only admin
 ```
 
+> 🔑 **Login Credentials**: After running the seed script, you can log in to the application using:
+> - **Admin Account**: 
+>   - Email: `admin@taskmaster.com`
+>   - Password: `Admin123!`
+> - **Regular User Account**: 
+>   - Email: `user@taskmaster.com`
+>   - Password: `User123!`
+>
+> ⚠️ **Important**: Use these credentials to access the application after completing the setup. You can change these passwords after first login.
+
 #### 2.6 (Optional) Configure Email for Password Reset
 
 Add to `.env`:
@@ -153,7 +163,16 @@ npm run dev
 
 ✅ Frontend: `http://localhost:5173`
 
-**Done!** Open the URL in your browser and log in with your seeded user credentials.
+**Done!** Open `http://localhost:5173` in your browser and log in using the seeded user credentials:
+
+- **Admin Account**: 
+  - Email: `admin@taskmaster.com`
+  - Password: `Admin123!`
+- **Regular User Account**: 
+  - Email: `user@taskmaster.com`
+  - Password: `User123!`
+
+> ⚠️ **Note**: If you haven't run the seed script yet, you'll need to register a new account first. After seeding, use the credentials above to log in.
 
 ## Docker Setup (Optional - Easier Alternative)
 
@@ -196,6 +215,9 @@ docker compose logs -f
 1. Run migrations: `cd backend && npm run migration:run`
 2. Seed users: `npm run seed:users` (set credentials in `.env` first)
 3. Access frontend: `http://localhost:5173`
+4. **Log in** using the seeded credentials:
+   - **Admin**: Email: `admin@taskmaster.com` / Password: `Admin123!`
+   - **User**: Email: `user@taskmaster.com` / Password: `User123!`
 
 ### Individual Services
 
@@ -427,9 +449,13 @@ See [Deployment Guide](./06-DEPLOYMENT.md) for production deployment instruction
 
 ## Next Steps
 
-1. **Create Admin User**: Use seed script or register first user
+1. **Log In to Application**: 
+   - After running seed script, use these credentials:
+   - **Admin**: Email: `admin@taskmaster.com` / Password: `Admin123!`
+   - **User**: Email: `user@taskmaster.com` / Password: `User123!`
+   - Or register a new account if you haven't seeded users
 2. **Configure Email**: Set up SMTP for password reset
 3. **Set Up Redis**: For production caching
-4. **Review Security**: Update all default secrets
+4. **Review Security**: Update all default secrets and change default passwords
 5. **Configure CORS**: Update allowed origins for production
 

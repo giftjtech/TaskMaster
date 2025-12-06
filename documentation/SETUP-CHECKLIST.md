@@ -23,6 +23,11 @@ Follow this checklist to get TaskMaster running quickly. Check off each step as 
 - [ ] Create database: `psql -U postgres` then `CREATE DATABASE taskmaster;`
 - [ ] Run migrations: `npm run migration:run`
 - [ ] (Optional) Seed users: Add to `.env` then `npm run seed:users`
+  - [ ] Add seed credentials to `.env`:
+    - [ ] `ADMIN_EMAIL=admin@taskmaster.com`
+    - [ ] `ADMIN_PASSWORD=Admin123!`
+    - [ ] `USER_EMAIL=user@taskmaster.com`
+    - [ ] `USER_PASSWORD=User123!`
 - [ ] Start backend: `npm run start:dev`
 - [ ] Verify: Open `http://localhost:3000/api/docs`
 
@@ -46,7 +51,9 @@ Follow this checklist to get TaskMaster running quickly. Check off each step as 
 ## ✅ Test Login
 
 - [ ] Open `http://localhost:5173`
-- [ ] Log in with seeded user credentials
+- [ ] Log in with seeded user credentials:
+  - **Admin**: Email: `admin@taskmaster.com` / Password: `Admin123!`
+  - **User**: Email: `user@taskmaster.com` / Password: `User123!`
 - [ ] Verify you can see the dashboard
 
 ## 🎉 Done!
