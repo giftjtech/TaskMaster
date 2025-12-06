@@ -12,6 +12,7 @@ Follow this checklist to get TaskMaster running quickly. Check off each step as 
 ## ✅ Backend Setup
 
 - [ ] Clone repository: `git clone <repo-url> && cd task-manage`
+- [ ] Checkout Codebase branch: `git checkout Codebase` (⚠️ Required for full system)
 - [ ] Navigate to backend: `cd backend`
 - [ ] Install dependencies: `npm install`
 - [ ] Create `.env` file: `node setup-env.js` OR `cp env.template .env`

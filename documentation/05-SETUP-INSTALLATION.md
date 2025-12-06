@@ -19,7 +19,10 @@ Before setting up the application, ensure you have the following installed:
 ```bash
 git clone https://github.com/giftjtech/TaskMaster.git
 cd TaskMaster
+git checkout Codebase
 ```
+
+> ⚠️ **Important**: Make sure to checkout the `Codebase` branch to get the full system with all features.
 
 ### Step 2: Backend Setup
 
